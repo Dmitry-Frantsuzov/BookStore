@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+<form method="post" action="/update">
+    <input type="hidden" placeholder="Id" name="id" th:value="${book.id}">
+    <input type="text" placeholder="Name" name="name" th:value="${book.name}">
+    <input type="text" placeholder="Author" name="author" th:value="${book.author}">
+    <input type="text" placeholder="Pages" name="pages" th:value="${book.pages}">
+    <input type="submit" value="Сохранить">
+</form>
+</body>
+</html>
