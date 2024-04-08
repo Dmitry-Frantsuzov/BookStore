@@ -16,6 +16,12 @@ public class Book {
         this.pages = pages;
     }
 
+    public Book(String name, String author, int pages) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+    }
+
     public String getName() {
         return name;
     }
@@ -46,5 +52,15 @@ public class Book {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", pages=" + pages +
+                '}';
     }
 }
